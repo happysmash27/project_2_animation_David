@@ -8,12 +8,24 @@
   <body style="text-align:center;">
     <h1>Floating Computer Terminal</h1>
     <p>This is a floating computer terminal, which allows people to ssh into public access unix systems. It is pretty convinient, especially when it follows you around...</p>
-<<<<<<< HEAD
-    <svg width="70%" viewBox="0 0 600 600" style="align:center">
-      <rect x="100" y="100" width="100" height="100"/>
-=======
     <svg width="50%" viewbox="0 0 600 600" style="text-align: center; border-style:solid;">
->>>>>>> origin/master
+      <g id="rects" class="rects">
+      <defs>
+        <linearGradient id="Chrome" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="#666"/>
+          <stop offset="100%" stop-color="#333"/>
+          <g id="computers">
+            <rect x="100" y="-100" width="100" height="100" fill="url(#Chrome)">
+              <animate id="rf1" begin="0s; rf2.end" attributeName="y" from="100" to="75" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
+            </rect>
+            <rect x="100" y="-100" width="100" height="100" fill="url(#Chrome)">
+              <animate id="rf2" begin="rf1.end" attributeName="y" from="75" to="100" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
+            </rect>
+          </g>
+      </defs>
+      <use xlink:href="#computers" x="300">
+        <animate begin="0s" attributeName="x" from="-300" to="700" dur="5s" repeatCount="indefinite"/>
+      </use>
     </svg>
   </body>
 </html>
