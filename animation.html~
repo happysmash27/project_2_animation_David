@@ -18,15 +18,9 @@
             <rect x="100" y="-100" width="100" height="100" fill="url(#Chrome)" fill-opacity="inherit">
               <animate id="rf1" begin="0s; rf2.end" attributeName="y" from="0" to="75" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
             </rect>
-	    <polygon points="105,-100 195,-100 195,-10 105,-10">
-	      <animate id="rf1_1" begin="0s; rf2_2.end" attributeName="points" from="105,5 195,5 195,95 105,95" to="105,80 195,80 195,170 105,170" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
-	    </polygon>
             <rect x="100" y="-100" width="100" height="100" fill="url(#Chrome)" fill-opacity="inherit">
               <animate id="rf2" begin="rf1.end" attributeName="y" from="75" to="0" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
             </rect>
-	    <polygon points="105,-100 195,-100 195,-10 105,-10">
-	      <animate id="rf2_2" begin="rf1_1.end" attributeName="points" from="105,80 195,80 195,170 105,170" to="105,5 195,5 195,95 105,95" dur="2s" calcMode="spline" keySplines=".5 0 .5 1"/>
-	    </polygon>
           </symbol>
           <symbol id="MC">
             <use xlink:href="#computers" x="300" fill-opacity="inherit">
